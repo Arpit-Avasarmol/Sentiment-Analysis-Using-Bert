@@ -8,7 +8,7 @@ This project focuses on conducting sentiment analysis for productivity-related a
 
 **Dataset Creation and Preprocessing**
 
-Dataset Selection: Reviews were collected using the Google-Play-Scrapper library from HuggingFace. The focus was on productivity apps such as habit trackers, calendar apps, and to-do lists.
+Dataset Selection: Reviews were collected using the Google-Play-Scrapper library from HuggingFace. The focus was on productivity apps such as habit trackers, calendar apps, and to-do lists.All the app list are included in app.csv
 App Selection: App-Annie website was utilized to select top-ranked third-party productivity apps from the Google Play Store.
 Dataset Preprocessing: Scraped data was converted into a structured format (review.csv). Irrelevant columns were removed, and rows with empty data were dropped. Ratings were mapped to sentiments: 1 and 2 as negative, 3 as neutral, and 4 and 5 as positive. Class imbalance was checked, and fortunately, the data was well balanced.
 
@@ -25,6 +25,7 @@ Gradio App: The trained sentiment analysis model was deployed on Gradio, allowin
 **Repository Structure**
 
 Source Code Files: Includes ipynb file for dataset preprocessing, model development, and evaluation.
+Dataset: apps.csv contains the apps for which we have collected the data, and reviews.csv is our final dataset we got after scrapping.
 README.md: Detailed documentation describing the project, dataset creation process, model training, evaluation, and deployment instructions.
 
 **Screenshots**: 
